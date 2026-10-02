@@ -6,7 +6,7 @@ const animais = [
         porte: "Porte médio",
         descricao:
             "Brincalhão e cheio de energia. Adora passear e receber carinho.",
-        imagem: "rocky.jpg",
+        imagem: "../img/rocky.jpg",
         alt:
             "Rocky, cachorro de pelagem clara e orelhas levantadas."
     },
@@ -17,7 +17,7 @@ const animais = [
         porte: "Porte médio",
         descricao:
             "Carinhosa e tranquila. Adora companhia e ambientes aconchegantes.",
-        imagem: "bella.jpg",
+        imagem: "../img/bella.jpg",
         alt:
             "Bella, cachorrinha de pelagem preta e expressão tranquila."
     },
@@ -28,7 +28,7 @@ const animais = [
         porte: "Porte pequeno",
         descricao:
             "Curioso e muito amoroso. Está sempre pronto para uma nova aventura.",
-        imagem: "max.jpg",
+        imagem: "../img/max.jpg",
         alt:
             "Max, filhote de cachorro de pelagem marrom e branca."
     }
@@ -71,7 +71,7 @@ export function carregarAnimais() {
                         </p>
 
                         <a
-                            href="cadastro.html"
+                            href="../html/cadastro.html"
                             class="button button-small">
                             Quero conhecer
                         </a>

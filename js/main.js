@@ -1,7 +1,7 @@
-import { iniciarMenu } from "ong/html/js/menu.js";
-import { carregarAnimais } from "js/animais.js";
-import { iniciarMascaras } from "ong/html/js/mascaras.js";
-import { iniciarValidacaoFormulario } from "js/validacao.js";
+import { iniciarMenu } from "./menu.js";
+import { carregarAnimais } from "./animais.js";
+import { iniciarMascaras } from "./mascaras.js";
+import { iniciarValidacaoFormulario } from "./validacao.js";
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,3 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
     iniciarValidacaoFormulario();
 
 });
+

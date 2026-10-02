@@ -2,7 +2,7 @@ import {
     salvarCadastro,
     recuperarCadastro,
     preencherFormulario
-} from "../../aaa/js/storage.js";
+} from "./storage.js";
 
 
 export function iniciarValidacaoFormulario() {
@@ -18,7 +18,6 @@ export function iniciarValidacaoFormulario() {
             'input[name="interesses"]'
         );
 
-
     if (!form) {
         return;
     }
@@ -26,7 +25,6 @@ export function iniciarValidacaoFormulario() {
 
     const dadosSalvos =
         recuperarCadastro();
-
 
     if (dadosSalvos) {
 
@@ -41,9 +39,7 @@ export function iniciarValidacaoFormulario() {
     form.addEventListener("submit", function (event) {
 
         event.preventDefault();
-
         mensagem.textContent = "";
-
         mensagem.classList.remove("error");
 
 
@@ -62,27 +58,22 @@ export function iniciarValidacaoFormulario() {
 
             mensagem.classList.add("error");
 
-
             if (interesses[0]) {
                 interesses[0].focus();
             }
-
             return;
 
         }
 
 
         if (!form.checkValidity()) {
-
             form.reportValidity();
-
             return;
 
         }
 
 
         const dadosCadastro = {};
-
 
         const campos =
             form.querySelectorAll(
@@ -96,11 +87,9 @@ export function iniciarValidacaoFormulario() {
                 return;
             }
 
-
             if (campo.name === "interesses") {
                 return;
             }
-
 
             if (campo.type === "checkbox") {
 
@@ -128,7 +117,6 @@ export function iniciarValidacaoFormulario() {
 
 
         salvarCadastro(dadosCadastro);
-
 
         mensagem.textContent =
             "Cadastro validado com sucesso! Os dados foram salvos no navegador para serem recuperados posteriormente.";
