@@ -2,7 +2,7 @@ import {
     salvarCadastro,
     recuperarCadastro,
     preencherFormulario
-} from "../../aaa/js/storage.js";
+} from "./storage.js";
 
 
 export function iniciarValidacaoFormulario() {
